@@ -1,0 +1,10 @@
+# Node.js
+johnny-backend/node_modules
+johnny-backend/.env
+
+# Angular
+johnny-frontend/node_modules
+johnny-frontend/dist/
+
+# Docker
+*.log

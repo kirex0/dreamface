@@ -1,0 +1,37 @@
+services:
+  johnny-frontend:
+    build:
+      context: ./johnny-frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - johnny-backend
+    networks:
+      - johnny-network
+
+  johnny-backend:
+    build:
+      context: ./johnny-backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./johnny-backend:/app
+      - /app/node_modules
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/johnny-db
+    depends_on:
+      - mongo
+    networks:
+      - johnny-network
+
+  mongo:
+    image: mongo:5
+    container_name: johnny-db
+    ports:
+      - "27017:27017"
+    networks:
+      - johnny-network
+
+networks:
+  johnny-network:
+    driver: bridge
