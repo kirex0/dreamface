@@ -1,0 +1,51 @@
+
+
+<div class="filter-box">
+    <h3>Filter Robots</h3>
+    <div class="inner-filter-box">
+        <form>
+            <input name="searchTerm" [(ngModel)]="searchTerm" placeholder="Search" />
+        </form>
+
+        <mat-form-field>
+            <mat-label>Select a status</mat-label>
+            <mat-select [(value)]="selectedStatus">
+                <mat-option>None</mat-option>
+                <mat-option value="Active">Active</mat-option>
+                <mat-option value="Inactive">Inactive</mat-option>
+                <mat-option value="Error">Error</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Last Updated
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(robot of robotItems() | filterRobots : searchTerm() | filterRobotByStatus : selectedStatus(); track robot._id){
+        <tr (click)="onRobotClick(robot._id)">
+            <td>
+                {{robot.name}}
+            </td>
+            <td>
+                {{robot.status}}
+            </td>
+            <td>
+                {{robot.lastUpdated}}
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

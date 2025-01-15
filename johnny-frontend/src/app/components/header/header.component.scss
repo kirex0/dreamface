@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    padding-inline: 16px;
+    padding-block: 8px;
+    background-color: #353535;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    > span {
+        cursor: pointer;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #444;
+            color: #ddd;
+        }
+    }
+}
