@@ -7,8 +7,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideHttpClient(),
+    provideHttpClient(), // Need this to make API calls
     provideZoneChangeDetection({ eventCoalescing: true }), 
-    provideRouter(routes), provideAnimationsAsync()
+    provideRouter(routes), // Need this to setup different pages(components) to route to
+    provideAnimationsAsync()
   ]
 };

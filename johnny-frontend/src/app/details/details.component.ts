@@ -4,6 +4,7 @@ import { Robotdetails } from '../model/robotdetails.type';
 import { RobotdetailsService } from '../services/robotdetails.service';
 import { catchError } from 'rxjs';
 import {MatCardModule} from '@angular/material/card';
+import { StatusColorService } from '../services/status-color.service';
 @Component({
   selector: 'app-details',
   providers: [],
@@ -13,14 +14,17 @@ import {MatCardModule} from '@angular/material/card';
 })
 export class DetailsComponent implements OnInit{
 
-  robotId: string = 'default';
-  robotDetailsService = inject(RobotdetailsService);
-  constructor(private route: ActivatedRoute) {}
-  robotInfo = signal<Robotdetails | null>(null);
+  robotDetailsService = inject(RobotdetailsService);   // Used for API calls
+  statusColorService = inject(StatusColorService);     // Used to color the staus of the robot
+
+  robotId: string = 'default';                         // Default string that will be updated when the API populates the data
+  constructor(private route: ActivatedRoute) {}        // Used to recieve incoming parameters when routed to this component
+  robotInfo = signal<Robotdetails | null>(null);       // Stores the Robot's data to display to the user
+  
 
   ngOnInit(): void {
       this.route.queryParams.subscribe(params => {
-        this.robotId = params['id'];
+        this.robotId = params['id']; // Id passes in the parameter
       });
       this.robotDetailsService.getRobotById(this.robotId)
       .pipe(
@@ -29,7 +33,7 @@ export class DetailsComponent implements OnInit{
           return [];
         })
       ).subscribe((robot) => {
-          this.robotInfo.set(robot);
+          this.robotInfo.set(robot); // updates robot info after the robot's data has been returned by the API
       });
   }
 }

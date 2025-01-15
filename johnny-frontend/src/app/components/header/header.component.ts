@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,5 +8,21 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  title = signal('Johnny Robot List')
+  title = signal('Home Page');
+// Constructor that listens for changes in the url
+  constructor(private router: Router) {
+    this.router.events.subscribe((event: any) => {
+      if (event.url) {
+        this.updateTitle(event.url);
+      }
+    });
+  }
+// Updates the title of the page based on the url
+  private updateTitle(url: string) {
+    if (url === '/') {
+      this.title.set('Johnny Robot List');
+    } else {
+      this.title.set('Back To Home Page');
+    }
+  }
 }

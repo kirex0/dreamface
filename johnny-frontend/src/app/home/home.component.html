@@ -6,12 +6,12 @@
         <form>
             <input name="searchTerm" [(ngModel)]="searchTerm" placeholder="Search" />
         </form>
-
         <mat-form-field>
             <mat-label>Select a status</mat-label>
             <mat-select [(value)]="selectedStatus">
+                <!-- values in mat-option allow term to be filtered -->
                 <mat-option>None</mat-option>
-                <mat-option value="Active">Active</mat-option>
+                <mat-option value="Active">Active</mat-option> 
                 <mat-option value="Inactive">Inactive</mat-option>
                 <mat-option value="Error">Error</mat-option>
             </mat-select>
@@ -22,24 +22,26 @@
 <table>
     <thead>
         <tr>
-            <th>
+            <!-- each different click allows different fields to sort the robots -->
+            <th (click)="sortRobots('name')">
                 Name
             </th>
-            <th>
+            <th (click)="sortRobots('status')">
                 Status
             </th>
-            <th>
+            <th (click)="sortRobots('date')">
                 Last Updated
             </th>
         </tr>
     </thead>
     <tbody>
+        <!-- creating table based on the robotItems in home, Custom pipes are used to filter robots by name or status or bot -->
         @for(robot of robotItems() | filterRobots : searchTerm() | filterRobotByStatus : selectedStatus(); track robot._id){
         <tr (click)="onRobotClick(robot._id)">
             <td>
                 {{robot.name}}
             </td>
-            <td>
+            <td [style.color]="statusColorService.getStatusColor(robot.status)">
                 {{robot.status}}
             </td>
             <td>

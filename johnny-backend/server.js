@@ -5,6 +5,7 @@ import cors from 'cors';  // Add this import
 
 // importing routes for the robot data
 import robotRoutes from './api/robots/robots_routes.js';
+import seedDatabase from './api/seed/seed.js';
 
 const app = express();
 
@@ -38,6 +39,8 @@ async function connectToMongoDB() {
 }
 
 connectToMongoDB();
+
+seedDatabase();
 
 // Routes
 app.use('/robots', robotRoutes);

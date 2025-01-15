@@ -1,0 +1,178 @@
+[
+    {
+      "id": "1",
+      "name": "Ryan1",
+      "status": "Active",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "2",
+      "name": "Ryan2",
+      "status": "Error",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "3",
+      "name": "Ryan3",
+      "status": "Inactive",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "4",
+      "name": "Ryan4",
+      "status": "Active",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "5",
+      "name": "Ryan5",
+      "status": "Error",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "6",
+      "name": "Ryan6",
+      "status": "Inactive",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "7",
+      "name": "Ryan7",
+      "status": "Active",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "8",
+      "name": "Ryan8",
+      "status": "Error",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "9",
+      "name": "Ryan9",
+      "status": "Inactive",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "10",
+      "name": "Ryan10",
+      "status": "Active",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "11",
+      "name": "Ryan11",
+      "status": "Error",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "12",
+      "name": "Ryan12",
+      "status": "Inactive",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "13",
+      "name": "Ryan13",
+      "status": "Active",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "14",
+      "name": "Ryan14",
+      "status": "Error",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "15",
+      "name": "Ryan15",
+      "status": "Inactive",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "16",
+      "name": "Ryan16",
+      "status": "Active",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "17",
+      "name": "Ryan17",
+      "status": "Error",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "18",
+      "name": "Ryan18",
+      "status": "Inactive",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "19",
+      "name": "Ryan19",
+      "status": "Active",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "20",
+      "name": "Ryan20",
+      "status": "Error",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "21",
+      "name": "Ryan21",
+      "status": "Inactive",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "22",
+      "name": "Ryan22",
+      "status": "Active",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "23",
+      "name": "Ryan23",
+      "status": "Error",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "24",
+      "name": "Ryan24",
+      "status": "Inactive",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    },
+    {
+      "id": "25",
+      "name": "Ryan25",
+      "status": "Active",
+      "lastUpdated": "2025-01-12T14:30:00Z",
+      "firmwareVersion": "1.2.0"
+    }
+  ]
+  

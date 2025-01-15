@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+// Used to make API calls to the database
 export class RobotdetailsService {
   http = inject(HttpClient);
   

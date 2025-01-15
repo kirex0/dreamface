@@ -1,3 +1,12 @@
 main{
     padding: 16px;
 }
+
+.gradient-background { // gives the application a nice background based off of dreamface's website
+    background: linear-gradient(to bottom, #426296, #94add63a);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: auto;
+}
+

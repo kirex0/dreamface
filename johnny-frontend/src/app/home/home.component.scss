@@ -1,7 +1,7 @@
 .filter-box {
     background-color: rgba(255, 255, 255, 0.8); // Semi-transparent white
     backdrop-filter: blur(10px); // Blur effect
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Modern shadow
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Shadow
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -41,7 +41,6 @@ form {
 mat-form-field {
     flex: 1;
     padding-top: 10px;
-    width: 33%;
     padding-top: 10px;
 }
 
@@ -55,12 +54,17 @@ table {
         text-align: left;
         background-color: #f4f4f4;
         font-weight: bold;
+
+    }
+    th {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
         &:hover {
-            cursor: default;
+            cursor: pointer;
+            background-color: #b6b6b6;
         }
     }
-
-    th, td {
+    td {
         padding: 12px 15px;
         border-bottom: 1px solid #ddd;
     }
