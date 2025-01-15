@@ -33,6 +33,7 @@ export class DetailsComponent implements OnInit{
           return [];
         })
       ).subscribe((robot) => {
+          robot.lastUpdated = new Date(robot.lastUpdated); // Makes the date human readable
           this.robotInfo.set(robot); // updates robot info after the robot's data has been returned by the API
       });
   }
