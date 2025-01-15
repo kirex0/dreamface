@@ -40,7 +40,7 @@ async function connectToMongoDB() {
 
 connectToMongoDB();
 
-seedDatabase();
+await seedDatabase();
 
 // Routes
 app.use('/robots', robotRoutes);
